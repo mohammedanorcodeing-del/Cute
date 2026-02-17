@@ -42,12 +42,13 @@
     justify-content: center;
     filter: drop-shadow(0 0 15px pink);
     animation: heart-pulse 2s infinite ease-in-out;
-    margin-left:  125px;
+    margin: 0 auto
 }
     .heart {
         width: 150px; height: 150px;
         object-fit: cover;
         background: pink;
+        display: block;
           filter: drop-shadow(0 0 30px pink);
         clip-path: shape(
       from 50% 91%,
@@ -86,13 +87,16 @@ margin: 20px auto;
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body  style=" padding-top: 160px; background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(a3.jpg); background-size: cover;display: flex; flex-direction: column; align-items: center; justify-content: center; height:100vh; margin: 0;">
-<section>
+<section style="display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: center;">
     <div class="glow-container">ْ
     <img src="a2.jpg" class="heart">
     </div>
    <h1>Lovely Girl</h1> 
    <h2>My Bio Page</h2>
-</section>
    <a href="https://www.facebook.com/الرابط هنا" class="btn-hovere" style="background-color:white;color:pink; padding: 15px 30px;text-decoration: none; border-radius: 30px; font-weight: bold;margin-top: 20px; display: inline-block;">
   <i class="fa-brands fa-facebook"></i> FACEBOOK
  </a>
@@ -111,6 +115,7 @@ margin: 20px auto;
  <a  href="http://t.me/اليوزر هنا" class="btn-hovere" style="background-color:white;color:pink; padding: 15px 30px;text-decoration: none; border-radius: 30px; font-weight: bold;margin-top: 20px; display: inline-block;">
 <i class="fa-brands fa-telegram"> Telegram</i>
 </a>
+    </section>
     <footer style="text-align: center;color: pink; padding: 20px;">
     <p><b>This site was made by MASH</b></p>
     <p>All Rights Reserved &copy:2026</p>
@@ -134,3 +139,4 @@ setTimeout(() => {
     </script>
 </body>
 </html>
+
