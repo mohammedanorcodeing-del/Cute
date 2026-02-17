@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciut Style</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com/css2?family=swap" rel="stylesheed">
+    <style>
+       .btn-hovere{
+        background: rgba(255, 255, 255, 0.15) !important; backdrop-filter: blur(15px); -webkit-backdrop-filter: blur(15px); border-radius: 25px; border: 1px solid rgba(255, 255, 255, 0.3)!important; 
+                transition: all 0.3s ease;
+                display: inline-block;
+                 margin: 12px  auto; 
+            width: 170px;
+        text-align:center; padding: 4px 0px;
+    text-decoration:none; 
+    border-radius: 12px;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 15px;}
+    .btn-hovere:hover{
+    background-color: transparent; color: rgb(237, 102, 125);
+    border: 2px solid rgb(237, 102, 125);
+    animation: shake 0.5s ease-in-out infinite;
+    box-shadow: 0px 0px 20px pink
+    }
+    @keyframes shake {
+        0% { transform: translateX(0);}
+        25% { transform: translateX(-6px); rotate: (-1deg);}
+        50% { transform: translateX(6px); rotate: (1deg);}
+        75% { transform: translateX(-6px); rotate: (-1deg);}
+        100% { transform: translateX(0);}
+    }
+    .glow-container {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: drop-shadow(0 0 15px pink);
+    animation: heart-pulse 2s infinite ease-in-out;
+    margin-left:  125px;
+}
+    .heart {
+        width: 150px; height: 150px;
+        object-fit: cover;
+        background: pink;
+          filter: drop-shadow(0 0 30px pink);
+        clip-path: shape(
+      from 50% 91%,
+      line to 90% 50%,
+      arc to 50% 9%  of 1%,
+      arc to 10% 50% of 1% );
+      filter: brightness(1.1) contrast(1.1);
+      border: 2px solid rgba(255, 192, 203, 0.5);
+      box-shadow: 0 0 20px;
+    }
+    .heart {      animation: pulse 2s infinite ease-in-out;
+    }
+    @keyframes pulse {
+        0% { transform: scale(1); filter: drop-shadow(0 0 5px rgba(255, 192, 203, 0,5)); }
+        50% { transform: scale(1.07); filter:  drop-shadow(0 0 5px rgba(255, 192, 203, 0,9));}
+        100% { transform: scale(1);  filter:  drop-shadow(0 0 5px rgba(255, 192, 203, 0,5));}
+    }
+      .moon{position: fixed; 
+                    top: -10px;
+            font-size: 85px;
+        user-select: none;
+    pointer-events: none;
+z-index: -1;
+animation: fall linear forwards;}
+section {
+padding: 30px;
+width: 85%;
+max-width: 400px;
+text-align: center;
+margin: 20px auto;
+}
+@keyframes fall { from { top: -80px}  to { top: 100vh} }
+    h1 {font-size:55px; color:  pink; margin-top: 20px;margin-bottom: 5px; font-family:"Playball", cursive; font-size:60px; text-shadow: 2px 2px 10px rgba(0,0,0,0.3);}
+    h2 {color: pink; text-shadow: 2px 2px 10px rgba(0,0,0,0.3);}
+    </style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body  style=" padding-top: 160px; background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(a3.jpg); background-size: cover;display: flex; flex-direction: column; align-items: center; justify-content: center; height:100vh; margin: 0;">
+<section>
+    <div class="glow-container">ْ
+    <img src="a2.jpg" class="heart">
+    </div>
+   <h1>Lovely Girl</h1> 
+   <h2>My Bio Page</h2>
+</section>
+   <a href="https://www.facebook.com/الرابط هنا" class="btn-hovere" style="background-color:white;color:pink; padding: 15px 30px;text-decoration: none; border-radius: 30px; font-weight: bold;margin-top: 20px; display: inline-block;">
+  <i class="fa-brands fa-facebook"></i> FACEBOOK
+ </a>
+<a  href="https://www.tiktok.com/الرابط هنا" class="btn-hovere" style="background-color:white;color:pink; padding: 15px 30px;text-decoration: none; border-radius: 30px; font-weight: bold;margin-top: 20px; display: inline-block;">
+<i class="fa-brands fa-tiktok">  TIKTOK</i>
+  </a>
+ <a  href="http://www.instagram.com/الرابط هنا" class="btn-hovere" style="background-color:white;color:pink; padding: 15px 30px;text-decoration: none; border-radius: 30px; font-weight: bold;margin-top: 20px; display: inline-block;">
+<i class="fa-brands fa-instagram">Instagram</i>
+</a>
+ <a  href="http://www.discord.com/اليوزر هنا" class="btn-hovere" style="background-color:white;color:pink; padding: 15px 30px;text-decoration: none; border-radius: 30px; font-weight: bold;margin-top: 20px; display: inline-block;">
+ <i class="fa-brands fa-discord"> Discord</i>
+</a>
+<a  href="http://wa.me/الرقم هنا بلا زايد او صفر في البداية" class="btn-hovere" style="background-color:white;color:pink; padding: 15px 30px;text-decoration: none; border-radius: 30px; font-weight: bold;margin-top: 20px; display: inline-block;">
+ <i class="fa-brands fa-whatsapp"> Whatsapp</i>
+ </a>
+ <a  href="http://t.me/اليوزر هنا" class="btn-hovere" style="background-color:white;color:pink; padding: 15px 30px;text-decoration: none; border-radius: 30px; font-weight: bold;margin-top: 20px; display: inline-block;">
+<i class="fa-brands fa-telegram"> Telegram</i>
+</a>
+    <footer style="text-align: center;color: pink; padding: 20px;">
+    <p><b>This site was made by MASH</b></p>
+    <p>All Rights Reserved &copy:2026</p>
+   </footer>
+   <script> function createMoon() {
+    const moon =document.createElement('div');
+    moon.classList.add('moon');
+    const items = ['❤️' , '💕','💓','💗','💖','❣️','💞'];
+    moon.innerHTML =
+     items[Math.floor(Math.random() *
+      items.length)]
+     moon.style.left = Math.random() * 100 + 'vw';
+    moon.style.fontSize = Math.random() * 80 + 20 + 'px';
+
+    moon.style.animationDuration = Math.random() * 2 + 8 + 's';
+    document.body.appendChild(moon);
+setTimeout(() => {
+    moon.remove(); }, 12000);
+}
+    setInterval(createMoon, 1000);
+    </script>
+</body>
+</html>
